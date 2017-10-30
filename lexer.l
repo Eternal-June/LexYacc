@@ -11,7 +11,7 @@ extern "C" int yylex(void);
 extern "C" int yywrap(void);
 %}
 
-NUM [0-9]+
+NUM [0-9]+([.][0-9]+)?
 
 %%
 
