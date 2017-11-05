@@ -14,16 +14,16 @@ $ make
 $ ./parser
 ```
 如果没有安装git、make、g++、lex、yacc工具可以运行以下命令<br>
-Debian、Ubuntu
+[Debian、Ubuntu](#)
 ```shell
 $ sudo apt-get install git make g++ flex bison -y
 ```
-sentos、suse
+[Centos、Suse](#)
 ```shell
 $sudo yum install git make g++ flex bison -y
 ```
 
-### 词法脚本基本格式
+### lex脚本格式（词法脚本基本格式）
 ```l
 %{
 C语言代码区，一般用于头文件引入，宏定义，变量定义，函数声明
