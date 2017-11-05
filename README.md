@@ -1,5 +1,5 @@
 # LexYacc
-## 须具备的知识
+### 需要具备以下基础知识
 [Yacc 与 Lex 快速入门](https://www.ibm.com/developerworks/cn/linux/sdk/lex/)
 ### 词法分析器生成脚本
 [lexer.l](https://github.com/easyfuck/LexYacc/blob/master/lexer.l)
