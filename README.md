@@ -7,10 +7,10 @@
 ### 语法分析器生成脚本
 [parser.y](https://github.com/easyfuck/LexYacc/blob/master/parser.y)
 ### 安装
-```shell
-$git clone https://github.com/easyfuck/LexYacc
-$make
-$./parser
+```bash
+$ git clone https://github.com/easyfuck/LexYacc
+$ make
+$ ./parser
 ```
 
 ### 词法脚本基本格式
