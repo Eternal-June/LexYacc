@@ -7,14 +7,15 @@
 ### 语法分析器生成脚本
 [parser.y](https://github.com/easyfuck/LexYacc/blob/master/parser.y)
 ### 安装
-```bash
+```shell
 $ git clone https://github.com/easyfuck/LexYacc
+$ cd LexYacc
 $ make
 $ ./parser
 ```
 
 ### 词法脚本基本格式
-```lex
+```l
 %{
 C语言代码区，一般用于头文件引入，宏定义，变量定义，函数声明
 %}
