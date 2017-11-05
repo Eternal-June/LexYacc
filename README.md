@@ -1,10 +1,17 @@
-# LexYacc
+# 基于lex和yacc工具实现的实数4则运算计算器
+
 ### 需要具备以下基础知识
 [Yacc 与 Lex 快速入门](https://www.ibm.com/developerworks/cn/linux/sdk/lex/)
 ### 词法分析器生成脚本
 [lexer.l](https://github.com/easyfuck/LexYacc/blob/master/lexer.l)
 ### 语法分析器生成脚本
 [parser.y](https://github.com/easyfuck/LexYacc/blob/master/parser.y)
+### 安装
+```shell
+$git clone https://github.com/easyfuck/LexYacc
+$make
+$./parser
+```
 
 ### 词法脚本基本格式
 ```lex
