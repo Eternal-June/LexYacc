@@ -6,12 +6,21 @@
 [lexer.l](https://github.com/easyfuck/LexYacc/blob/master/lexer.l)
 ### 语法分析器生成脚本
 [parser.y](https://github.com/easyfuck/LexYacc/blob/master/parser.y)
-### 安装
+### Linux下安装
 ```shell
 $ git clone https://github.com/easyfuck/LexYacc
 $ cd LexYacc
 $ make
 $ ./parser
+```
+如果没有安装git、make、g++、lex、yacc工具可以运行以下命令<br>
+Debian、Ubuntu
+```shell
+$ sudo apt-get install git make g++ flex bison -y
+```
+sentos、suse
+```shell
+$sudo yum install git make g++ flex bison -y
 ```
 
 ### 词法脚本基本格式
