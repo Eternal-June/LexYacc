@@ -14,11 +14,11 @@ $ make
 $ ./parser
 ```
 如果没有安装git、make、g++、lex、yacc工具可以运行以下命令<br>
-[Debian、Ubuntu](#)
+[Debian、Ubuntu]()
 ```shell
 $ sudo apt-get install git make g++ flex bison -y
 ```
-[Centos、Suse](#)
+[Centos、Suse]()
 ```shell
 $sudo yum install git make g++ flex bison -y
 ```
