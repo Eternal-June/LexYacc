@@ -15,9 +15,16 @@ extern "C" void yyerror(const char*);
 }
 
 %type <double> NUM
-%token NUM ADD MIN MUL DIV MOD LP RP
-%left ADD MIN
-%left MUL DIV MOD
+%token NUM
+%token '+'
+%token '-'
+%token '*'
+%token '/'
+%token '%'
+%token '('
+%token ')'
+%left '+'  '-'
+%left '*'  '/'  '%'
 
 %%
 
@@ -30,17 +37,17 @@ statement:
 expression:
 		NUM	{$<value>$ = strtod($<text>1, 0);}
 		|
-		LP expression RP {$<value>$ = $<value>2;}
+		'(' expression ')' {$<value>$ = $<value>2;}
 		|
-		expression ADD expression  {$<value>$ = $<value>1 + $<value>3;}
+		expression '+' expression  {$<value>$ = $<value>1 + $<value>3;}
 		|
-		expression MIN expression  {$<value>$ = $<value>1 - $<value>3;}
+		expression '-' expression  {$<value>$ = $<value>1 - $<value>3;}
 		|
-		expression MUL expression  {$<value>$ = $<value>1 * $<value>3;}
+		expression '*' expression  {$<value>$ = $<value>1 * $<value>3;}
 		|
-		expression DIV expression  {$<value>$ = $<value>1 / $<value>3;}
+		expression '/' expression  {$<value>$ = $<value>1 / $<value>3;}
 		|
-		expression MOD expression  {$<value>$ = fmod($<value>1, $<value>3);}
+		expression '%' expression  {$<value>$ = fmod($<value>1, $<value>3);}
 		;
 
 %%

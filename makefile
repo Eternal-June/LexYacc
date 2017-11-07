@@ -1,6 +1,7 @@
-CC:=g++
-LEX:=lex
-YACC:=yacc
+ARCH:=/usr/bin/
+CC:=$(ARCH)g++
+LEX:=$(ARCH)lex
+YACC:=$(ARCH)yacc
 
 all: parser lexer 
 

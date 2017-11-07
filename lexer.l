@@ -16,13 +16,13 @@ NUM [0-9]+([.][0-9]+)?
 %%
 
 {NUM}	{CopyText(); return NUM;}
-"+"		{CopyText(); return ADD;}
-"-"		{CopyText(); return MIN;}
-"*"		{CopyText(); return MUL;}
-"/"		{CopyText(); return DIV;}
-"%"		{CopyText(); return MOD;}
-"("		{CopyText(); return LP;}
-")"		{CopyText(); return RP;}
+"+"		{CopyText(); return '+';}
+"-"		{CopyText(); return '-';}
+"*"		{CopyText(); return '*';}
+"/"		{CopyText(); return '/';}
+"%"		{CopyText(); return '%';}
+"("		{CopyText(); return '(';}
+")"		{CopyText(); return ')';}
 "\n"	{return 0;}
 .		{}
 
